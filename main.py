@@ -3,8 +3,10 @@ from core import Transaction, Expense, Income, Transfer, search_transaction
 from core import Budget
 from core import Category
 from core import Goal,SavingGoal,DebtPayoffGoal,PurchaseGoal,RetirementGoal
-from datetime import date
+from datetime import date,datetime
 from core import UserProfile
+
+from services import ReportGenerator,SpendingReport,IncomeReport,NetWorthReport
 
 
 def main():
@@ -85,13 +87,72 @@ def main():
     # print(result)
 
     #                                     user_profile
-    profile1=UserProfile(username='Mehwash', email='mehwash@gmail.com', password='mishi123@', currency='US',locale='en_US')
-    print(profile1.username)
-    print(profile1.authentication('mishi123@') ) 
-    print(profile1.authentication("wrongpassword"))   
+    # profile1=UserProfile(username='Mehwash', email='mehwash@gmail.com', password='mishi123@', currency='US',locale='en_US')
+    # print(profile1.username)
+    # print(profile1.authentication('mishi123@') ) 
+    # print(profile1.authentication("wrongpassword"))   
 
-    profile1.change_password("newpassword")
-    print(profile1.authentication("newpassword"))        
+    # profile1.change_password("newpassword")
+    # print(profile1.authentication("newpassword"))        
+
+ 
+
+    # transactions = [
+    #     {"amount": 50, "date": "2024-04-01", "category": "food"},
+    #     {"amount": 30, "date": "2024-04-02", "category": "transport"},
+    #     {"amount": 20, "date": "2024-04-05", "category": "food"},
+    #       ]
+
+    # start_date = datetime.strptime("2024-04-01", "%Y-%m-%d").date()
+    # end_date = datetime.strptime("2024-04-10", "%Y-%m-%d").date()
+
+    # report = SpendingReport("Food Expenses Report", start_date, end_date, transactions, category_filter="food")
+    # result = report.generate()
+
+    # print(result['table'])
+                         
+    transactions = [
+        {"amount": 10000, "date": "2024-01-15", "type": "income"},
+        {"amount": 12000, "date": "2024-02-15", "type": "income"},
+        {"amount": 9000, "date": "2024-03-10", "type": "income"},
+        {"amount": 3000, "date": "2024-03-25", "type": "income"},
+        {"amount": 1500, "date": "2024-03-05", "type": "expense"}, 
+          ]
+    start_date = datetime.strptime("2024-01-01", "%Y-%m-%d").date()
+    end_date = datetime.strptime("2024-03-31", "%Y-%m-%d").date()
+    report = IncomeReport("Quarterly Income Report", start_date, end_date, transactions)
+    result = report.generate()
+    print(result['table'])
+
+
+        # Sample Transactions (Income and Expenses)
+    # data = [
+    #     {"date": "2024-04-01", "type": "income", "amount": 10000},
+    #     {"date": "2024-04-05", "type": "expense", "amount": 5000},
+    #     {"date": "2024-04-10", "type": "income", "amount": 15000},
+    #     {"date": "2024-04-15", "type": "expense", "amount": 7000},
+    #    ]
+    # assets = {
+    #   "bank_balance": 100000,
+    #   "car": 50000,
+    #   "house": 300000,
+    # }
+    # debts = {
+    #   "loan": 100000,
+    #   "credit_card": 50000,
+    # }
+    # report_title = "Net Worth Report for April 2024"
+    # start_date = datetime.strptime("2024-04-01", "%Y-%m-%d").date()
+    # end_date = datetime.strptime("2024-04-30", "%Y-%m-%d").date()
+
+    # report = NetWorthReport(report_title, start_date, end_date, data, assets, debts)
+    # result = report.generate()
+    # print(result)
+
+
+
+
+
 
 
 
