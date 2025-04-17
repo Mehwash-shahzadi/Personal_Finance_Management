@@ -13,7 +13,7 @@ def calculate_compound_interest(principal, rate, time, compounding_per_year=4):
     return principal * (1 + rate / compounding_per_year) ** (compounding_per_year * time) - principal
 
 def calculate_loan_amortization(loan_amount, interest_rate, term_years):
-    """Calculates the loan."""
+    """Calculates the monthly payments."""
     rate_per_month = interest_rate / 12 / 100
     number_of_months = term_years * 12
     return loan_amount * rate_per_month / (1 - (1 + rate_per_month) ** -number_of_months)

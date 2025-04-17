@@ -7,6 +7,9 @@ from datetime import date,datetime
 from core import UserProfile
 
 from services import ReportGenerator,SpendingReport,IncomeReport,NetWorthReport
+from services import NotificationManager,BudgetAlert,ScheduledNotification,GoalReminder
+
+from data import DataManager
 
 
 def main():
@@ -111,18 +114,18 @@ def main():
 
     # print(result['table'])
                          
-    transactions = [
-        {"amount": 10000, "date": "2024-01-15", "type": "income"},
-        {"amount": 12000, "date": "2024-02-15", "type": "income"},
-        {"amount": 9000, "date": "2024-03-10", "type": "income"},
-        {"amount": 3000, "date": "2024-03-25", "type": "income"},
-        {"amount": 1500, "date": "2024-03-05", "type": "expense"}, 
-          ]
-    start_date = datetime.strptime("2024-01-01", "%Y-%m-%d").date()
-    end_date = datetime.strptime("2024-03-31", "%Y-%m-%d").date()
-    report = IncomeReport("Quarterly Income Report", start_date, end_date, transactions)
-    result = report.generate()
-    print(result['table'])
+    # transactions = [
+    #     {"amount": 10000, "date": "2024-01-15", "type": "income"},
+    #     {"amount": 12000, "date": "2024-02-15", "type": "income"},
+    #     {"amount": 9000, "date": "2024-03-10", "type": "income"},
+    #     {"amount": 3000, "date": "2024-03-25", "type": "income"},
+    #     {"amount": 1500, "date": "2024-03-05", "type": "expense"}, 
+    #       ]
+    # start_date = datetime.strptime("2024-01-01", "%Y-%m-%d").date()
+    # end_date = datetime.strptime("2024-03-31", "%Y-%m-%d").date()
+    # report = IncomeReport("Quarterly Income Report", start_date, end_date, transactions)
+    # result = report.generate()
+    # print(result['table'])
 
 
         # Sample Transactions (Income and Expenses)
@@ -148,6 +151,19 @@ def main():
     # report = NetWorthReport(report_title, start_date, end_date, data, assets, debts)
     # result = report.generate()
     # print(result)
+
+#                          notificationmanager
+
+    # nm = NotificationManager()
+
+    # nm.add_notification(BudgetAlert("Food", 500, 460))
+    # nm.add_notification(GoalReminder("Emergency Fund", 1000, 750))
+    # nm.add_notification(ScheduledNotification("Don't forget to review your budget!", "weekly", "Monday"))
+
+    # nm.send_all()
+
+
+
 
 
 
