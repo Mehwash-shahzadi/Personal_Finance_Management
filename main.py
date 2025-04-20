@@ -10,6 +10,7 @@ from services import ReportGenerator,SpendingReport,IncomeReport,NetWorthReport
 from services import NotificationManager,BudgetAlert,ScheduledNotification,GoalReminder
 
 from data import DataManager
+from ui import ConsoleUi
 
 
 def main():
@@ -162,10 +163,31 @@ def main():
 
     # nm.send_all()
 
+#                        DataManager
 
+ 
 
+    # dm = DataManager.get_instance()
+    # dm.validate_data()
 
+    # dm.add_goal("Save for new laptop")
+    # dm.add_alert("Monthly food budget near limit")
+    # dm.add_notification("Reminder: Rent is due tomorrow!")
 
+    # dm.save_to_file()
+
+    # dm.load_from_file()
+
+    # dm.create_backup()
+
+    # dm.export_data("data/exported_data.json")
+
+    # dm.import_data("data/backup_data.json")
+    # print("Current Data:")
+    # print(dm.get_all_data())
+
+    ui = ConsoleUi()
+    ui.start_ui()
 
 
 
@@ -173,6 +195,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main()  
 
 
