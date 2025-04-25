@@ -1,9 +1,9 @@
 {
     "goals": [
         {
-            "name": "",
-            "amount": 1,
-            "deadline": "2025-04-23"
+            "name": "car",
+            "amount": 5000,
+            "deadline": "2025-04-25"
         }
     ],
     "alerts": [],

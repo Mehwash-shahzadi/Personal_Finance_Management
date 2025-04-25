@@ -5,7 +5,7 @@ from data.manager import DataManager
 dm = DataManager.get_instance()
 dm.validate_data()
 
-st.title('Personal Finance Management')
+st.title('Personal Finance Manager')
 
 menu=st.sidebar.selectbox('Menu',['Add Goal','View Goals','Import Data','Export Data','Exit'])
 
