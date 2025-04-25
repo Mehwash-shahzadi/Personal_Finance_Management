@@ -57,7 +57,7 @@ streamlit run app.py
 ### 🔧 Add Goal Interface
 This screenshot shows the Streamlit form where users can input a goal name, target amount, and deadline.
 
-![Add Goal](./screenshots/add_goal.png)
+![Add Goal](screenshots/add_goal.png)
 
 ---
 
@@ -69,21 +69,21 @@ This shows confirmation after a goal is added and saved successfully.
 ### 📋 View Goals
 This screenshot displays the list of all saved goals with their names, target amounts, and deadlines.
 
-![View Goals](./screenshots/view_goals.png)
+![View Goals](screenshots/view_goals.png)
 
 ---
 
 ### 📥 import Data
 This screenshot shows the interface where the user can enter a file path to import current financial data to a JSON file.
 
-![Import Data](./screenshots/import_data.png)
+![Import Data](screenshots/import_data.png)
 
 ---
 
 ### 📤 Export Data
 This screenshot shows the interface where the user can enter a file path to export current financial data to a JSON file.
 
-![Export Data](./screenshots/export_data.png)
+![Export Data](screenshots/export_data.png)
 
 ---
 
