@@ -51,10 +51,12 @@ personal_finance_manager/ ├── main.py ├── app.py ├── core/ │
 
 ```bash
 streamlit run app.py
+```
 
 ## 📸 Screenshots
 
 ### 🔧 Add Goal Interface
+
 This screenshot shows the Streamlit form where users can input a goal name, target amount, and deadline.
 
 ![Add Goal](assets/add_goal.png)
@@ -62,6 +64,7 @@ This screenshot shows the Streamlit form where users can input a goal name, targ
 ---
 
 ### ✅ Goal Added Successfully
+
 This shows confirmation after a goal is added and saved successfully.
 
 ![Goal Success](assets/goal_success.png)
@@ -69,6 +72,7 @@ This shows confirmation after a goal is added and saved successfully.
 ---
 
 ### 📋 View Goals
+
 This screenshot displays the list of all saved goals with their names, target amounts, and deadlines.
 
 ![View Goals](assets/view_goals.png)
@@ -76,6 +80,7 @@ This screenshot displays the list of all saved goals with their names, target am
 ---
 
 ### 📥 Import Data
+
 This screenshot shows the interface where the user can enter a file path to import current financial data from a JSON file.
 
 ![Import Data](assets/import_data.png)
@@ -83,6 +88,7 @@ This screenshot shows the interface where the user can enter a file path to impo
 ---
 
 ### 📤 Export Data
+
 This screenshot shows the interface where the user can enter a file path to export current financial data to a JSON file.
 
 ![Export Data](assets/export_data.png)
@@ -90,13 +96,12 @@ This screenshot shows the interface where the user can enter a file path to expo
 ---
 
 ### ❌ Exit Application
+
 A simple message confirming the user has exited the application.
 
 ![Exit](assets/exit.png)
 
+## 🙋‍♂️ Author
 
-🙋‍♂️ Author
-Made with dedication by a beginner learning Python and Streamlit.
+Made with dedication by a beginner learning Python and Streamlit.  
 This project was a self-initiated learning experience — designed, developed, and tested independently.
-
-```
