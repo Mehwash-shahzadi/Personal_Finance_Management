@@ -19,7 +19,7 @@ The project started as a console application and later upgraded with a web-based
 
 ## 📁 Project Structure
 
-personal_finance_manager/ ├── main.py ├── app.py ├── core/ │ ├── account.py │ ├── transaction.py │ ├── budget.py │ ├── goal.py │ ├── category.py │ └── user_profile.py ├── services/ │ ├── report_generator.py │ ├── projection_calculator.py │ └── notification_manager.py ├── data/ │ └── data_manager.py ├── utils/ │ └── utils.py ├── ui/ │ └── console_ui.py └── screenshots/ ├── add_goal.png ├── goal_success.png ├── view_goals.png ├── import_data.png ├── export_data.png ├── exit.png
+personal_finance_manager/ ├── main.py ├── app.py ├── core/ │ ├── account.py │ ├── transaction.py │ ├── budget.py │ ├── goal.py │ ├── category.py │ └── user_profile.py ├── services/ │ ├── report_generator.py │ ├── projection_calculator.py │ └── notification_manager.py ├── data/ │ └── data_manager.py ├── utils/ │ └── utils.py ├── ui/ │ └── console_ui.py └── assets/ ├── add_goal.png ├── goal_success.png ├── view_goals.png ├── import_data.png ├── export_data.png ├── exit.png
 
 ---
 
@@ -57,40 +57,43 @@ streamlit run app.py
 ### 🔧 Add Goal Interface
 This screenshot shows the Streamlit form where users can input a goal name, target amount, and deadline.
 
-![Add Goal](screenshots/add_goal.png)
+![Add Goal](assets/add_goal.png)
 
 ---
 
-✅ Goal Added Successfully
+### ✅ Goal Added Successfully
 This shows confirmation after a goal is added and saved successfully.
+
+![Goal Success](assets/goal_success.png)
 
 ---
 
 ### 📋 View Goals
 This screenshot displays the list of all saved goals with their names, target amounts, and deadlines.
 
-
+![View Goals](assets/view_goals.png)
 
 ---
 
-### 📥 import Data
-This screenshot shows the interface where the user can enter a file path to import current financial data to a JSON file.
+### 📥 Import Data
+This screenshot shows the interface where the user can enter a file path to import current financial data from a JSON file.
 
-
+![Import Data](assets/import_data.png)
 
 ---
 
 ### 📤 Export Data
 This screenshot shows the interface where the user can enter a file path to export current financial data to a JSON file.
 
-
+![Export Data](assets/export_data.png)
 
 ---
 
-❌ Exit Application
+### ❌ Exit Application
 A simple message confirming the user has exited the application.
 
----
+![Exit](assets/exit.png)
+
 
 🙋‍♂️ Author
 Made with dedication by a beginner learning Python and Streamlit.

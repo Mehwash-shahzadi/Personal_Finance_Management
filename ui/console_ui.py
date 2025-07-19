@@ -13,7 +13,7 @@ class ConsoleUi:
            print('4. Export Data')  
            print('5. Exit')
 
-           choice=input('Enter you choice(1-5)')
+           choice=input('Enter you choice(1-5):')
 
            if choice=='1':
                 self.add_goal()
