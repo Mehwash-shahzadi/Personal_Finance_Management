@@ -1,10 +1,10 @@
-# 📝 Personal Finance Manager
+#  Personal Finance Manager
 
 A simple and beginner-friendly application that helps users manage their finances effectively. This project was built entirely from scratch using **Python** and **Streamlit** to practice Object-Oriented Programming, modular code design, and building a basic UI.
 
 ---
 
-## 📌 Description
+##  Description
 
 Personal Finance Manager allows users to:
 
@@ -17,24 +17,24 @@ The project started as a console application and later upgraded with a web-based
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 personal_finance_manager/ ├── main.py ├── app.py ├── core/ │ ├── account.py │ ├── transaction.py │ ├── budget.py │ ├── goal.py │ ├── category.py │ └── user_profile.py ├── services/ │ ├── report_generator.py │ ├── projection_calculator.py │ └── notification_manager.py ├── data/ │ └── data_manager.py ├── utils/ │ └── utils.py ├── ui/ │ └── console_ui.py └── assets/ ├── add_goal.png ├── goal_success.png ├── view_goals.png ├── import_data.png ├── export_data.png ├── exit.png
 
 ---
 
-## 🚀 Features
+##  Features
 
-- ➕ Add and manage financial goals
-- 📋 View existing goals
-- 📥 Import data from a file
-- 📤 Export current data to a file
-- ✅ Confirmation after adding goals
-- ❌ Exit application smoothly
+-  Add and manage financial goals
+-  View existing goals
+-  Import data from a file
+-  Export current data to a file
+-  Confirmation after adding goals
+-  Exit application smoothly
 
 ---
 
-## 💻 Technologies Used
+##  Technologies Used
 
 - Python
 - Streamlit
@@ -43,7 +43,7 @@ personal_finance_manager/ ├── main.py ├── app.py ├── core/ │
 
 ---
 
-## 🎮 How to Run
+##  How to Run
 
 1. Clone the repository
 2. Navigate to the project folder
@@ -53,9 +53,9 @@ personal_finance_manager/ ├── main.py ├── app.py ├── core/ │
 streamlit run app.py
 ```
 
-## 📸 Screenshots
+##  Screenshots
 
-### 🔧 Add Goal Interface
+### Add Goal Interface
 
 This screenshot shows the Streamlit form where users can input a goal name, target amount, and deadline.
 
@@ -63,7 +63,7 @@ This screenshot shows the Streamlit form where users can input a goal name, targ
 
 ---
 
-### ✅ Goal Added Successfully
+###  Goal Added Successfully
 
 This shows confirmation after a goal is added and saved successfully.
 
@@ -71,7 +71,7 @@ This shows confirmation after a goal is added and saved successfully.
 
 ---
 
-### 📋 View Goals
+###  View Goals
 
 This screenshot displays the list of all saved goals with their names, target amounts, and deadlines.
 
@@ -79,7 +79,7 @@ This screenshot displays the list of all saved goals with their names, target am
 
 ---
 
-### 📥 Import Data
+###  Import Data
 
 This screenshot shows the interface where the user can enter a file path to import current financial data from a JSON file.
 
@@ -87,7 +87,7 @@ This screenshot shows the interface where the user can enter a file path to impo
 
 ---
 
-### 📤 Export Data
+###  Export Data
 
 This screenshot shows the interface where the user can enter a file path to export current financial data to a JSON file.
 
@@ -95,13 +95,13 @@ This screenshot shows the interface where the user can enter a file path to expo
 
 ---
 
-### ❌ Exit Application
+###  Exit Application
 
 A simple message confirming the user has exited the application.
 
 ![Exit](assets/exit.png)
 
-## 🙋‍♂️ Author
+##  Author
 
 Made with dedication by a beginner learning Python and Streamlit.  
 This project was a self-initiated learning experience — designed, developed, and tested independently.
